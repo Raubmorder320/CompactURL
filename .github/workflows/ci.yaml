@@ -1,0 +1,6 @@
+name: CI
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    run: echo "Hello, world!" & uname -a
