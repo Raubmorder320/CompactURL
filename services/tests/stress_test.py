@@ -6,7 +6,7 @@ import random
 # Конфигурация
 API_URL = "http://127.0.0.1:80/shorten"
 NUM_THREADS = 50  # Количество пользователей
-REQUESTS_PER_THREAD = 50  # Запросов от каждого
+REQUESTS_PER_THREAD = 100  # Запросов от каждого
 
 
 def send_request(thread_index):
