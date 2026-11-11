@@ -4,7 +4,8 @@ on: [push, workflow_dispatch]
 jobs:
   hello:
     runs-on: ubuntu-latest
-    if: github.branch == 'ci/github-actions'
+    if: github.ref_name == 'ci/github-actions'
+
 
     steps:
       - name : hello
