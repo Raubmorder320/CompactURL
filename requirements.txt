@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+aiosqlite==0.21.0
+fastapi
+uvicorn
+pydantic
+httpx
+jinja2
+pytest
+pytest-asyncio
+respx
