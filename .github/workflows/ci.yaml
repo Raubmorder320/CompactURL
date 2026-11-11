@@ -17,4 +17,4 @@ jobs:
       - name: list files
         run: ls -la
       - name: lint
-        run: pip install flake8 && flake8 . --count--show-source --statistics
+        run: pip install flake8 && flake8 . 
