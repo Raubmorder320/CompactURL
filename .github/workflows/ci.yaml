@@ -1,6 +1,5 @@
 name: CI
 on: workflow_dispatch
-if: github.branch == 'main'
 
 jobs:
   hello:
