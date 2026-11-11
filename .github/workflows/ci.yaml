@@ -16,4 +16,4 @@ jobs:
       - name: lint
         run: pip install flake8 && flake8 services --ignore=E501 
       - name: unit tests
-        run: pip install -r requirements.txt && pytest services/test_units_local.py --maxfail=1 --disable-warnings -q
+        run: pip install -r requirements.txt && pytest services/tests/test_units_local.py --maxfail=1 --disable-warnings -q
