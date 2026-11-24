@@ -44,7 +44,7 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: run smoke tests
-        run: python -m services/tests/smoke_test
+        run: pytest smoke_test.py
       - name: logs
         if: failure()
         run: docker compose logs
