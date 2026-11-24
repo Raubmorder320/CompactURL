@@ -35,8 +35,18 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
       - name: docker compose up
         run: docker compose -f docker-compose.yml up -d --build --wait
+      - name: install dependencies
+        run: pip install -r requirements.txt
+      - name: run smoke tests
+        run: python -m services/tests/smoke_test.py
       - name: logs
         if: failure()
         run: docker compose logs
+
+
